@@ -1,7 +1,7 @@
 <?php
 class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
-	public function crear($nom = "Julian", $ape = "Darruiz", $dni = "40843113", $salario = "$50000", $sector = "No especificado") {
+	public function crear($nom = "Julian", $ape = "Darruiz", $dni = "40843113", $salario = "50000", $sector = "No especificado") {
 		$e = new \App\Empleado($nom, $ape, $dni, $salario, $sector);
 		return $e;
 	}
@@ -20,8 +20,8 @@ class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
 	public function testFuncionaMetodoSalario()
 	{
-		$r = $this-> crear("$50000");
-		$this->assertEquals("$50000", $r->getSalario());
+		$r = $this-> crear("50000");
+		$this->assertEquals("50000", $r->getSalario());
 	} 
 
 	public function testFuncionaMetodoSector()
@@ -33,8 +33,8 @@ class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
 	public function testFuncionaMetodoToString()
 	{
-		$r = $this->crear("Patricia","Brasca","14328698","30000");
-		$this->assertEquals("Patricia Brasca 14328698 30000",$r);
+		$r = $this->crear("Patricia","Brasca","40843113","50000");
+		$this->assertEquals("Patricia Brasca 40843113 50000",$r);
 	}
 
 	public function testEmpleadoNombreVacio()
