@@ -8,8 +8,8 @@ class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
 	public function testFuncionaMetodoNombreYApellido()
 	{
-		$r = $this-> crear("Patricia","Brasca");
-		$this->assertEquals("Patricia Brasca", $r->getNombreApellido());
+		$r = $this-> crear("Julian","Darruiz");
+		$this->assertEquals("Julian Darruiz", $r->getNombreApellido());
 	}
 
 	public function testFuncionaMetodoDni()
@@ -33,8 +33,8 @@ class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
 	public function testFuncionaMetodoToString()
 	{
-		$r = $this->crear("Patricia","Brasca","40843113","50000");
-		$this->assertEquals("Patricia Brasca 40843113 50000",$r);
+		$r = $this->crear("Julian","Darruiz","40843113","50000");
+		$this->assertEquals("Julian Darruiz 40843113 50000",$r);
 	}
 
 	public function testEmpleadoNombreVacio()
